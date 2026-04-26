@@ -1,0 +1,25 @@
+# Generated / downloaded asset trees (large, proprietary, not for distribution)
+dumps/
+out/
+
+# Dumper artifacts
+mismatches.txt
+
+# Generated viewer catalog (rebuild with tools/build_model_index.py)
+viewer/models.json
+
+# Local tooling
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

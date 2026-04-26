@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Lepton Viewer</title>
+<link rel="stylesheet" href="./css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.167.0/three.module.min.js"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="canvas"></canvas>
+    <div id="title" class="chrome"></div>
+    <div id="picker" class="chrome"><select id="picker-select" aria-label="Model"></select></div>
+    <div id="menu" class="chrome"></div>
+    <div id="views" class="chrome"></div>
+    <aside id="sidecar" class="chrome">
+      <button id="sidecar-close" aria-label="Close">&times;</button>
+      <h2 id="sidecar-title"></h2>
+      <div id="sidecar-body"></div>
+      <img id="sidecar-image" alt="">
+    </aside>
+    <div id="hotspot-card" class="chrome">
+      <button id="hotspot-close" aria-label="Close">&times;</button>
+      <div id="hotspot-body"></div>
+      <img id="hotspot-image" alt="">
+    </div>
+    <div id="object-card" class="chrome">
+      <button id="object-close" aria-label="Close">&times;</button>
+      <h2 id="object-title"></h2>
+      <div id="object-actions"></div>
+      <dl id="object-body"></dl>
+    </div>
+    <div id="loader">Loading…</div>
+    <button id="debug-toggle" class="chrome" aria-expanded="false" aria-controls="debug-panel">Debug</button>
+    <div id="debug-panel" class="chrome" hidden></div>
+  </div>
+  <script type="module" src="./js/LeptonViewer.js"></script>
+</body>
+</html>
