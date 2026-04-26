@@ -2,6 +2,8 @@
 
 Tools for downloading Kaon-format 3D product visualizations and converting them to glTF (`.glb`) for use in a self-hosted Three.js viewer.
 
+**NOTE: big thanks to claude code for make this and save my time (total: less than 1M tokens in one day (most were consumed by MCP :sad:))**
+
 The pipeline has three stages:
 
 1. `dumper.py` downloads every asset listed in the remote `manifest.webgl.txt`, verifies each by hash, and writes the tree to `./dumps/`.
