@@ -29,7 +29,7 @@ The pipeline has three stages:
 ## Install
 
 ```
-git clone <repo-url>
+git clone https://github.com/Larinax999/kaon_threejs_loader.git
 cd kaon_export
 python -m venv .venv
 
